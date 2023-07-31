@@ -1,6 +1,9 @@
 # Custom Dog nose detection training.
 ## _Training custom yolov8 model_
 
+## Complete Documentation https://docs.google.com/document/d/1mXVtjtAF0Q6n7Fotgim636RbiLkEczvP0wkDmCztcvM/edit
+
+
 ## Steps
 
 - Create a account in roboflow : https://roboflow.com/
@@ -23,7 +26,7 @@ conda activate custom_training
 Clone the repository
 
 ```sh
-git clone https://github.com/adityaweboccult/custom_training_with_roboflow.git
+git clone https://rise4bux@bitbucket.org/infrasonic/petbiometricstraining.git
 ```
 Change the directory
 
