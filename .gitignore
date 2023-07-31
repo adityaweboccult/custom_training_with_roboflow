@@ -1,0 +1,9 @@
+*.pt
+runs/
+*.history
+*.jpeg
+*.png
+*.jpg
+*.txt
+*.yaml
+!requirements.txt
