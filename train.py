@@ -1,6 +1,18 @@
 from ultralytics import YOLO
 from roboflow import Roboflow
 import os
+import torch
+
+# Setting the device
+
+if torch.cuda.is_available():
+    device = "cuda:0"
+else:
+    device = "cpu"
+
+print(device)
+
+
 
 # Here in the below example the name inside .project() is the project name, here dog_nose_detection, ignore the last five characters
 # The version is written in project.version(1), here 1 is the version
@@ -26,7 +38,8 @@ else:
     model = YOLO("yolov8n.pt")
     model.train(
         data=os.getcwd()+f"/{project_name}/data.yaml",   # path of the data.yaml present in the downloaded dataset folder
-        epochs=EPOCH
+        epochs=EPOCH,
+        device = device
     )
 
 # the best.pt and last.pt will be saved at latest version of runs/detect/latest_version_of_train/weights
