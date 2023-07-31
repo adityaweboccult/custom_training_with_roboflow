@@ -1,8 +1,6 @@
 # Custom Dog nose detection training.
 ## _Training custom yolov8 model_
 
-## Complete Documentation https://docs.google.com/document/d/1mXVtjtAF0Q6n7Fotgim636RbiLkEczvP0wkDmCztcvM/edit
-
 ## Steps
 
 - Create a account in roboflow : https://roboflow.com/
@@ -28,15 +26,11 @@ Clone the repository
 git clone https://github.com/adityaweboccult/custom_training_with_roboflow.git
 ```
 Change the directory
-```sh
-cd custom_training_with_roboflow
-```
 
 Install the packages
 ```sh
 pip install -r requirements.txt
 ```
-
 Install Pytorch https://pytorch.org/
 
 GPU
@@ -47,8 +41,7 @@ CPU
 ```sh
 conda install pytorch torchvision torchaudio cpuonly -c pytorch
 ```
-
-Change the project_name and the code snippet obtained from roboflow in the `train.py` file
+Change the API_KEY, MODEL_ENDPOINT, VERSION and EPOCHS in the .env file.
 
 Run the code
 
